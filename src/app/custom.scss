@@ -1,0 +1,230 @@
+@import url("../style/satoshi.css");
+* {
+  font-family: "Satoshi-Variable";
+}
+/* make the customizations VARIABLE ONLY */
+$primary: #d64923;
+$secondary: #002029;
+$sucess: #42ff00;
+$warning: #ffe500;
+$danger: #ff0000;
+$light: #ffffff;
+$dark: $secondary;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $sucess,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+
+/* import bootstrap to set changes */
+
+@import "~bootstrap/scss/bootstrap";
+* {
+  padding: 0;
+  margin: 0;
+}
+// make components customization
+.accordion,
+.accordion-header,
+.accordion-button {
+  font-size: 1.2rem;
+  width: 100% !important;
+  --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
+  --bs-accordion-border-color: #aeaeae;
+}
+.accordion-button:not(.collapsed) {
+  background-color: #fffcbd;
+}
+.accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: none !important;
+}
+.navbar-toggler {
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: $primary;
+  background-color: none;
+  border: 1px solid $light;
+}
+.navbar-toggler-icon {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  background-color: $primary;
+  box-shadow: none;
+}
+
+#NavigationBar {
+  padding-top: 32px;
+  min-height: 12vh;
+  width: 100%;
+}
+.nav-item {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+}
+.nav-item.active {
+  font-weight: bolder;
+  color: #d64923 !important;
+}
+
+.nav-item:hover {
+  color: #d64a23e1 !important;
+}
+
+#basic-nav-dropdown {
+  color: #ffffff;
+}
+
+#basic-nav-dropdown:hover {
+  color: #d64a23e1 !important;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 0 16px;
+}
+
+.navDrop a:first-child {
+  color: #002029 !important;
+}
+
+.navToggler .navbar-toggler-icon {
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navToggler:focus {
+  text-decoration: none;
+  outline: 0;
+  background-color: #e1e1e1;
+  box-shadow: none;
+}
+.navToggler {
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: $light;
+  background-color: none;
+  border: 1px solid $secondary;
+}
+
+.btn {
+  color: $light !important;
+  border-radius: 30px;
+  padding: 10px 40px;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Tablet (ukuran font yang sedikit lebih kecil daripada desktop) */
+
+@media (max-width: 991px) {
+  .navBtn {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  .hero-header,
+  .about-header,
+  .services-header,
+  .faq-header {
+    font-size: 3.75rem; /* Contoh ukuran font untuk tablet */
+  }
+
+  .hero-desc,
+  .services-desc,
+  .card-desc,
+  .faq-desc,
+  .accordion-button,
+  .accordion-body,
+  .about-desc {
+    font-size: 2rem; /* Contoh ukuran font untuk tablet */
+  }
+  .faq {
+    width: 100%;
+  }
+  .hero-copy {
+    gap: 16px;
+  }
+  .links {
+    gap: 32px 128px;
+    margin: auto;
+  }
+
+  .faq-image {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-header {
+    font-size: 2.5rem; /* Contoh ukuran font untuk mobile */
+  }
+
+  .about-header,
+  .services-header,
+  .faq-header {
+    font-size: 2rem;
+  }
+
+  .faq-img {
+    max-width: 180px;
+  }
+
+  .hero-desc,
+  .services-desc,
+  .card-desc,
+  .faq-desc,
+  .accordion-button,
+  .accordion-body,
+  .about-desc {
+    font-size: 0.75rem; /* Contoh ukuran font untuk tablet */
+    text-align: left;
+    font-weight: 400;
+    /* Contoh ukuran font untuk mobile */
+  }
+
+  .direct,
+  .contact,
+  .office,
+  .copyright,
+  .tag {
+    font-size: 0.8rem;
+    gap: 16px;
+  }
+
+  .navigator {
+    margin-bottom: 4px;
+    font-size: 1rem;
+  }
+
+  .element {
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+  }
+
+  .links {
+    gap: 32px 32px;
+    // justify-content: space-around;
+  }
+
+  .img-up {
+    scale: 0.7;
+    bottom: 16px;
+    right: 16px;
+  }
+}

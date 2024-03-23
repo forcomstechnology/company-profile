@@ -1,0 +1,44 @@
+.Hero {
+  height: 88vh;
+  display: flex;
+  padding: 0px 72px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1920px;
+  position: relative;
+  width: auto;
+  min-height: auto;
+}
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.hero-header {
+  font-size: 72px;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.hero-desc {
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  width: auto;
+}
+
+.hero-ornament {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.hero-ornament2 {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  transform: scaleX(-1);
+}

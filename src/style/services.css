@@ -1,0 +1,81 @@
+.services {
+  padding: 64px 72px;
+  gap: 32px;
+  background: #ffffff;
+  justify-content: center;
+  max-width: 1920px;
+  width: 100%;
+}
+.services-card {
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  gap: 16px;
+}
+.services-copy {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.services-header {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: normal;
+}
+.services-desc {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  line-height: 160%;
+}
+.cards {
+  display: flex;
+  padding: 24px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 24px;
+  background: #fff;
+
+  /* Shadow/base */
+  box-shadow:
+    0px 2px 4px -1px rgba(0, 0, 0, 0.06),
+    0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.cards-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.headers {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: normal;
+}
+.card-desc {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 320px;
+}
+.btn-services {
+  display: flex;
+  padding: 8px 0px;
+  align-items: center;
+  background-color: white;
+  border: none;
+  color: #d64923;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: -0.14px;
+}
