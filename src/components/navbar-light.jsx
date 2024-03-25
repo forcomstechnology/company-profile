@@ -13,7 +13,9 @@ import Image from "next/image";
 
 export default function NavigationBar() {
   const [direction, setDirection] = useState(
-    window.innerWidth < 991 ? "vertical" : "horizontal"
+    typeof window !== "undefined" && window.innerWidth < 991
+      ? "vertical"
+      : "horizontal"
   );
   const [path, setPath] = useState("");
   useEffect(() => {
@@ -39,7 +41,11 @@ export default function NavigationBar() {
   // Menggunakan useEffect untuk menambahkan event listener saat komponen dimuat
   useEffect(() => {
     const handleResize = () => {
-      setDirection(window.innerWidth < 991 ? "vertical" : "horizontal");
+      setDirection(
+        typeof window !== "undefined" && window.innerWidth < 991
+          ? "vertical"
+          : "horizontal"
+      );
     };
 
     window.addEventListener("resize", handleResize);
