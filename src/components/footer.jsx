@@ -60,10 +60,10 @@ export default function Footer() {
                   +62 821-3875-4680
                 </a>
                 <a
-                  href="mailto:forcoms@gmail.com"
+                  href="mailto:forcomstechnology@gmail.com"
                   className="text-light contact"
                 >
-                  forcoms@gmail.com
+                  forcomstechnology@gmail.com
                 </a>
               </div>
             </div>

@@ -1,15 +1,15 @@
-import { Accordion } from 'react-bootstrap';
-import { motion } from 'framer-motion';
-import '../style/faq.css';
+import { Accordion } from "react-bootstrap";
+import { motion } from "framer-motion";
+import "../style/faq.css";
 
 function Faq() {
   return (
-    <div className="container d-flex justify-content-center faq-section d-flex flex-row">
+    <div className="container d-flex justify-content-center d-flex flex-row">
       <div className="faq">
         <motion.div
           initial={{ opacity: 0, y: -150 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, type: 'spring', bounce: 0.3 }}
+          transition={{ duration: 1, type: "spring", bounce: 0.3 }}
           viewport={{ once: true }}
           className="faq-copy"
         >
@@ -21,13 +21,13 @@ function Faq() {
         <motion.div
           initial={{ opacity: 0, y: 150 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, type: 'spring', bounce: 0.3 }}
+          transition={{ duration: 1, type: "spring", bounce: 0.3 }}
           viewport={{ once: true }}
           className="faq-qna"
         >
           <Accordion defaultActiveKey="">
             <Accordion.Item eventKey="0">
-              <Accordion.Header >
+              <Accordion.Header>
                 What kind of businesses can benefit from your software
                 development services?
               </Accordion.Header>
