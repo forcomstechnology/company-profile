@@ -58,10 +58,10 @@ export default function NavigationBar() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav>
               <Stack direction={direction} gap={5}>
-                <Nav.Link className="nav-item m-auto" href="#home">
+                <Nav.Link className="nav-item m-auto" href="/#home">
                   Home
                 </Nav.Link>
-                <Nav.Link className="nav-item m-auto" href="#about-us">
+                <Nav.Link className="nav-item m-auto" href="/#about-us">
                   About Us
                 </Nav.Link>
                 <NavDropdown
