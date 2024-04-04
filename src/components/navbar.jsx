@@ -79,6 +79,9 @@ export default function NavigationBar() {
                     System Development
                   </NavDropdown.Item>
                 </NavDropdown>
+                <Nav.Link className="nav-item m-auto" href="/portfolio">
+                  Portfolio
+                </Nav.Link>
                 <Nav.Link className="nav-item m-auto" href="faq">
                   FAQ
                 </Nav.Link>

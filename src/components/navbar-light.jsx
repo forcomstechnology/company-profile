@@ -112,6 +112,13 @@ export default function NavigationBar() {
                 </NavDropdown>
 
                 <Nav.Link
+                  id="portfolio"
+                  className="nav-item m-auto text-secondary"
+                  href="portfolio"
+                >
+                  Portfolio
+                </Nav.Link>
+                <Nav.Link
                   id="faq"
                   className="nav-item m-auto text-secondary"
                   href="faq"
